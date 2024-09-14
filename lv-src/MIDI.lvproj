@@ -18,6 +18,7 @@
 		</Item>
 		<Item Name="midi.lvclass" Type="LVClass" URL="../midi/midi.lvclass"/>
 		<Item Name="midiout_main.vi" Type="VI" URL="../midiout_main.vi"/>
+		<Item Name="midiin_main.vi" Type="VI" URL="../midiin_main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
