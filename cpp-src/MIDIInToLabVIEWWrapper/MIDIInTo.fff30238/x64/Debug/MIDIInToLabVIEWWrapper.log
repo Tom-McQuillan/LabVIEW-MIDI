@@ -1,0 +1,6 @@
+﻿  MIDIInToLabVIEWWrapper.cpp
+C:\code\LabVIEW-MIDI\cpp-src\MIDIInToLabVIEWWrapper\MIDIInToLabVIEWWrapper.cpp(32,48): warning C4267: '=': conversion from 'size_t' to 'int32', possible loss of data
+  (compiling source file '/MIDIInToLabVIEWWrapper.cpp')
+  
+     Creating library C:\code\LabVIEW-MIDI\cpp-src\MIDIInToLabVIEWWrapper\x64\Debug\MIDIInToLabVIEWWrapper.lib and object C:\code\LabVIEW-MIDI\cpp-src\MIDIInToLabVIEWWrapper\x64\Debug\MIDIInToLabVIEWWrapper.exp
+  MIDIInToLabVIEWWrapper.vcxproj -> C:\code\LabVIEW-MIDI\cpp-src\MIDIInToLabVIEWWrapper\x64\Debug\MIDIInToLabVIEWWrapper.dll

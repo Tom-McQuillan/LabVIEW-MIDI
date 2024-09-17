@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45898AFE-6798-4D0A-92E9-C74FA97F59E4}|MIDI_In_CPP_Exmaple.vcxproj|C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{45898AFE-6798-4D0A-92E9-C74FA97F59E4}|MIDI_In_CPP_Exmaple.vcxproj|solutionrelative:midiinSimple.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "midiinSimple.cpp",
+              "DocumentMoniker": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "RelativeDocumentMoniker": "midiinSimple.cpp",
+              "ToolTip": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "RelativeToolTip": "midiinSimple.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-16T16:08:17.784Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
