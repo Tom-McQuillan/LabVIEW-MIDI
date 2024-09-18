@@ -76,6 +76,7 @@
 			<Item Name="winmm.dll" Type="Document" URL="winmm.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="MIDIInToLabVIEWWrapper.dll" Type="Document" URL="../../cpp-src/MIDIInToLabVIEWWrapper/x64/Release/MIDIInToLabVIEWWrapper.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

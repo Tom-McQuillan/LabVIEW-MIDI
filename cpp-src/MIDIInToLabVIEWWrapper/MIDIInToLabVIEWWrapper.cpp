@@ -47,18 +47,16 @@ void CALLBACK MidiInCallbackFunction(HMIDIIN hMidiIn, UINT uMsg, DWORD dwInstanc
     }
 }
 
-// DLL export function to set the Status filter array
-extern "C" __declspec(dllexport) void LVSetStatusFilterArray(uint8_t* filterArray, int32_t arraySize)
-{
-    // Clear the current filter and set the new one
-    statusFilterArray.clear();
-    statusFilterArray.insert(statusFilterArray.end(), filterArray, filterArray + arraySize);
-}
-
-// DLL export functions
-extern "C" __declspec(dllexport) MMRESULT LVmidiInOpen(HMIDIIN* phMidiIn, UINT uDeviceID, LVUserEventRef* pUserEventRef)
+// DLL export function to open MIDI input and set the Status filter array
+extern "C" __declspec(dllexport) MMRESULT LVmidiInOpen(HMIDIIN* phMidiIn, UINT uDeviceID, LVUserEventRef* pUserEventRef, uint8_t* filterArray, int32_t arraySize)
 {
     g_userEventRef = pUserEventRef;
+
+    // Set the Status filter array
+    statusFilterArray.clear();
+    statusFilterArray.insert(statusFilterArray.end(), filterArray, filterArray + arraySize);
+
+    // Open MIDI input device with the callback function
     return midiInOpen(phMidiIn, uDeviceID, (DWORD_PTR)MidiInCallbackFunction, 0, CALLBACK_FUNCTION);
 }
 
