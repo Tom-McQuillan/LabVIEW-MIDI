@@ -8,63 +8,49 @@
 #pragma comment(lib, "winmm.lib")
 #pragma comment(lib, "labviewv.lib")
 
-// Global variables
-LVUserEventRef g_lvUserEvent = 0;
-HMIDIIN g_hMidiIn = nullptr;
+// Define the structure for the MIDI data
+struct MidiData {
+    int32_t Status;
+    int32_t data1;
+    int32_t data2;
+};
+
+// Pointer to the LabVIEW User Event reference
+static LVUserEventRef* g_userEventRef = nullptr;
 
 // Callback function for MIDI input
-void CALLBACK MidiInProc(HMIDIIN hMidiIn, UINT wMsg, DWORD_PTR dwInstance, DWORD_PTR dwParam1, DWORD_PTR dwParam2) {
-    if (wMsg == MIM_DATA && g_lvUserEvent != 0) {
-        DWORD status = dwParam1 & 0xFF;
-        DWORD data1 = (dwParam1 >> 8) & 0xFF;
-        DWORD data2 = (dwParam1 >> 16) & 0xFF;
+void CALLBACK MidiInCallbackFunction(HMIDIIN hMidiIn, UINT uMsg, DWORD dwInstance, DWORD dwParam1, DWORD dwParam2)
+{
+    if (g_userEventRef && *g_userEventRef) {
+        // Extract MIDI data
+        MidiData midiData;
+        midiData.Status = (int32_t)(dwParam1 & 0xFF);
+        midiData.data1 = (int32_t)((dwParam1 >> 8) & 0xFF);
+        midiData.data2 = (int32_t)((dwParam1 >> 16) & 0xFF);
 
-        std::stringstream ss;
-        ss << "Status: 0x" << std::hex << (status & 0xFF)
-            << ", Data1: " << std::dec << data1
-            << ", Data2: " << data2;
-
-        std::string midiMessage = ss.str();
-
-        LStrHandle lvString = (LStrHandle)DSNewHandle(sizeof(int32) + midiMessage.size());
-        if (lvString) {
-            memcpy(LStrBuf(*lvString), midiMessage.c_str(), midiMessage.size());
-            (*lvString)->cnt = midiMessage.size();
-            PostLVUserEvent(g_lvUserEvent, lvString);
-            DSDisposeHandle(lvString);
-        }
+        // Post the event to LabVIEW
+        PostLVUserEvent(*g_userEventRef, &midiData);
     }
 }
 
-// Exported function to open MIDI input device
-extern "C" __declspec(dllexport) int LV_midiInOpen(HMIDIIN* hMidiIn, LVUserEventRef* lvEventRef) {
-
-    g_lvUserEvent = *lvEventRef;
-
-    UINT deviceId = 0;  // Change this if needed
-    MMRESULT result = ::midiInOpen(&g_hMidiIn, deviceId, (DWORD_PTR)MidiInProc, 0, CALLBACK_FUNCTION);
-    if (result != MMSYSERR_NOERROR) return result;
-
-    *hMidiIn = g_hMidiIn;  // Pass the handle back
-    return MMSYSERR_NOERROR;
+// DLL export functions
+extern "C" __declspec(dllexport) MMRESULT LVmidiInOpen(HMIDIIN* phMidiIn, UINT uDeviceID, LVUserEventRef* pUserEventRef)
+{
+    g_userEventRef = pUserEventRef;
+    return midiInOpen(phMidiIn, uDeviceID, (DWORD_PTR)MidiInCallbackFunction, 0, CALLBACK_FUNCTION);
 }
 
-// Exported function to start receiving MIDI data
-extern "C" __declspec(dllexport) int LV_midiInStart(HMIDIIN hMidiIn) {
-    if (hMidiIn == nullptr) return -1;  // Invalid input
-    return ::midiInStart(hMidiIn);
+extern "C" __declspec(dllexport) MMRESULT LVmidiInStart(HMIDIIN hMidiIn)
+{
+    return midiInStart(hMidiIn);
 }
 
-// Exported function to stop receiving MIDI data
-extern "C" __declspec(dllexport) int LV_midiInStop(HMIDIIN hMidiIn) {
-    if (hMidiIn == nullptr) return -1;  // Invalid input
-    return ::midiInStop(hMidiIn);
+extern "C" __declspec(dllexport) MMRESULT LVmidiInStop(HMIDIIN hMidiIn)
+{
+    return midiInStop(hMidiIn);
 }
 
-// Exported function to close MIDI input device
-extern "C" __declspec(dllexport) int LV_midiInClose(HMIDIIN hMidiIn) {
-    if (hMidiIn == nullptr) return -1;  // Invalid input
-    MMRESULT result = ::midiInClose(hMidiIn);
-    g_hMidiIn = nullptr;
-    return result;
+extern "C" __declspec(dllexport) MMRESULT LVmidiInClose(HMIDIIN hMidiIn)
+{
+    return midiInClose(hMidiIn);
 }

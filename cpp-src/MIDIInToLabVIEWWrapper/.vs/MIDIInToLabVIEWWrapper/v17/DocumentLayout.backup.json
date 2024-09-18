@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{FFF30238-4066-48E3-A0D7-B791B523640C}|MIDIInToLabVIEWWrapper.vcxproj|solutionrelative:MIDIInToLabVIEWWrapper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FFF30238-4066-48E3-A0D7-B791B523640C}|MIDIInToLabVIEWWrapper.vcxproj|C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FFF30238-4066-48E3-A0D7-B791B523640C}|MIDIInToLabVIEWWrapper.vcxproj|solutionrelative:MIDIInToLabVIEWWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -23,15 +26,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MIDIInToLabVIEWWrapper.h",
-              "DocumentMoniker": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.h",
-              "RelativeDocumentMoniker": "MIDIInToLabVIEWWrapper.h",
-              "ToolTip": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.h",
-              "RelativeToolTip": "MIDIInToLabVIEWWrapper.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-16T16:47:44.321Z",
-              "EditorCaption": ""
+              "Title": "midiinSimple.cpp",
+              "DocumentMoniker": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "RelativeDocumentMoniker": "..\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "ToolTip": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "RelativeToolTip": "..\\MIDI_In_CPP_Exmaple\\midiinSimple.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-16T17:21:06.759Z"
             },
             {
               "$type": "Document",
@@ -41,10 +43,22 @@
               "RelativeDocumentMoniker": "MIDIInToLabVIEWWrapper.cpp",
               "ToolTip": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.cpp",
               "RelativeToolTip": "MIDIInToLabVIEWWrapper.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-16T16:33:15.336Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MIDIInToLabVIEWWrapper.h",
+              "DocumentMoniker": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.h",
+              "RelativeDocumentMoniker": "MIDIInToLabVIEWWrapper.h",
+              "ToolTip": "C:\\code\\LabVIEW-MIDI\\cpp-src\\MIDIInToLabVIEWWrapper\\MIDIInToLabVIEWWrapper.h",
+              "RelativeToolTip": "MIDIInToLabVIEWWrapper.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-16T16:47:44.321Z"
             }
           ]
         }
