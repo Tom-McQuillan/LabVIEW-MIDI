@@ -27,6 +27,7 @@
 		<Item Name="midiin_main.vi" Type="VI" URL="../midiin_main.vi"/>
 		<Item Name="midi-file.lvclass" Type="LVClass" URL="../midi-file/midi-file.lvclass"/>
 		<Item Name="midi-file_main.vi" Type="VI" URL="../midi-file_main.vi"/>
+		<Item Name="midi-ui.lvclass" Type="LVClass" URL="../midi-ui/midi-ui.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -79,6 +80,8 @@
 				<Item Name="Set Union.vim" Type="VI" URL="/&lt;vilib&gt;/set operations/Set Union.vim"/>
 				<Item Name="Draw Arc.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Arc.vi"/>
 				<Item Name="Draw Circle by Radius.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Draw Circle by Radius.vi"/>
+				<Item Name="Draw Multiple Lines.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Multiple Lines.vi"/>
+				<Item Name="NI_AAL_Geometry.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Geometry.lvlib"/>
 			</Item>
 			<Item Name="winmm.dll" Type="Document" URL="winmm.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
