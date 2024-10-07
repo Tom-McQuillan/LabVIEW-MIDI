@@ -30,6 +30,9 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="midi-ui.lvclass" Type="LVClass" URL="../midi-ui/midi-ui.lvclass"/>
 		<Item Name="midiPlayer.lvclass" Type="LVClass" URL="../midiPlayer/midiPlayer.lvclass"/>
+		<Item Name="midi-file-event.lvclass" Type="LVClass" URL="../midi-file-events/midi-file-event.lvclass"/>
+		<Item Name="midi-file-event.meta.lvclass" Type="LVClass" URL="../midi-file-event.meta/midi-file-event.meta.lvclass"/>
+		<Item Name="midi-file-event.midi.lvclass" Type="LVClass" URL="../midi-file-event.midi/midi-file-event.midi.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -99,6 +102,8 @@
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="Build State String with Arguments__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Build State String with Arguments__jki_lib_state_machine.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 			</Item>
 			<Item Name="winmm.dll" Type="Document" URL="winmm.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
