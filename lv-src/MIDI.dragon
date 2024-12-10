@@ -1,0 +1,13 @@
+[project]
+labview-version = 2020
+vipc = ""
+
+[nipm]
+
+[vipm]
+
+[vipm.dependencies]
+oglib_array = "6.0.1.20"
+oglib_comparison = "6.0.0.4"
+oglib_picture = "6.0.0.15"
+jki_lib_state_machine = "2024.0.1.14"
