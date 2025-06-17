@@ -45,6 +45,26 @@
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Property Name="ShowPackages" Type="Bool">true</Property>
+			<Item Name="jki_lib_state_machine [different version of required package is installed]" Type="{2DC17C6E-B9FF-4CBE-BC4B-3D45FE0534D9}">
+				<Property Name="package-name" Type="Str">jki_lib_state_machine</Property>
+				<Property Name="package-type" Type="Str">vipm</Property>
+			</Item>
+			<Item Name="oglib_array [marked as required but not called by project VIs]" Type="{2DC17C6E-B9FF-4CBE-BC4B-3D45FE0534D9}">
+				<Property Name="package-name" Type="Str">oglib_array</Property>
+				<Property Name="package-type" Type="Str">vipm</Property>
+			</Item>
+			<Item Name="oglib_comparison [marked as required but not called by project VIs]" Type="{2DC17C6E-B9FF-4CBE-BC4B-3D45FE0534D9}">
+				<Property Name="package-name" Type="Str">oglib_comparison</Property>
+				<Property Name="package-type" Type="Str">vipm</Property>
+			</Item>
+			<Item Name="oglib_picture [marked as required but not called by project VIs]" Type="{2DC17C6E-B9FF-4CBE-BC4B-3D45FE0534D9}">
+				<Property Name="package-name" Type="Str">oglib_picture</Property>
+				<Property Name="package-type" Type="Str">vipm</Property>
+			</Item>
+			<Item Name="oglib_variantconfig" Type="{2DC17C6E-B9FF-4CBE-BC4B-3D45FE0534D9}">
+				<Property Name="package-name" Type="Str">oglib_variantconfig</Property>
+				<Property Name="package-type" Type="Str">vipm</Property>
+			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
